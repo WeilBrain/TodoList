@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "forTodoList",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "start:dev": "nodemon",
+    "db:up": "node src/database/scripts/dbUp.js",
+    "db:down": "node src/database/scripts/dbDown.js",
+    "tables:up": "node src/database/scripts/tablesUp.js",
+    "trigger:up": "node src/database/scripts/triggerUp.js",
+    "db:init": "npm run db:up && npm run tables:up"
+  },
+  "author": "Egor",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "logger": "^0.0.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.6.5",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.35.1",
+    "winston": "^3.11.0"
+  }
+}
