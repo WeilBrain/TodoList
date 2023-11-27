@@ -1,6 +1,5 @@
 const mysql = require('mysql');
 const { DB_HOST, DB_USER, DB_PASS } = require('../utils/secrets');
-const { logger } = require('../../utils/logger');
 
 const connection = mysql.createConnection({
     host: DB_HOST,
@@ -9,7 +8,7 @@ const connection = mysql.createConnection({
 });
 
 connection.connect((err) => {
-    if (err) logger.error(err.message);
+    if (err) console.log(error);
 });
 
 module.exports = connection;
