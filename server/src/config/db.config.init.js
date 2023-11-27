@@ -1,6 +1,6 @@
-//db.config.init.js
 const mysql = require('mysql');
 const { DB_HOST, DB_USER, DB_PASS } = require('../utils/secrets');
+const { logger } = require('../../utils/logger');
 
 const connection = mysql.createConnection({
     host: DB_HOST,

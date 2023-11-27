@@ -1,4 +1,3 @@
-// db.config.js
 const { Sequelize } = require('sequelize');
 const { DB_HOST, DB_USER, DB_PASS, DB_NAME } = require('../utils/secrets');
 

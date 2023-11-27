@@ -1,4 +1,3 @@
-//queries.js
 const { DB_NAME } = require('../utils/secrets')
 
 const createDB = `CREATE DATABASE IF NOT EXISTS ${DB_NAME}`;

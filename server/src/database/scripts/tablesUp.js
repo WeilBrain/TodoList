@@ -1,6 +1,5 @@
-//tablesUp.js
 const { logger } = require('../../utils/logger');
-const { createTableTodos } = require('../queries'); // Добавлен импорт
+const { createTableTodos } = require('../queries');
 const dbConfig = require('../../config/db.config');
 
 (() => {
